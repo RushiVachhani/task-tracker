@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello from react</h1>
+    <div className="container">
+      <Header />
+      <Header title = "HELLO"/>
     </div>
   );
 }
