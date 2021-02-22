@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "text": "finish node crash course",
+      "day": "tomorrow",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "finish express crash course",
+      "day": "day after tomorrow",
+      "reminder": true
+    },
+    {
+      "text": "finish react crash course",
+      "day": "today",
+      "reminder": false,
+      "id": 4
+    }
+  ]
+}
