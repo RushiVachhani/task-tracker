@@ -4,7 +4,7 @@
       "id": 2,
       "text": "finish node crash course",
       "day": "tomorrow",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 3,
@@ -15,7 +15,7 @@
     {
       "text": "finish react crash course",
       "day": "today",
-      "reminder": true,
+      "reminder": false,
       "id": 4
     }
   ]

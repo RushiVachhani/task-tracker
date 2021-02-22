@@ -4,7 +4,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -109,5 +108,10 @@ body {
 
 footer {
   margin-top: 30px;
+  text-align: center;
+}
+
+.about {
+  margin: auto;
   text-align: center;
 }
