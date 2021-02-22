@@ -11,34 +11,41 @@ const App = () => {
             id: 1,
             text: "do finish react project",
             day: "today",
-            reminder: "true"
+            reminder: true
         },
         {
             id: 2,
             text: "finish node crash course",
             day: "tomorrow",
-            reminder: "true"
+            reminder: false
         },
         {
             id: 3,
             text: "finish express crash course",
             day: "day after tomorrow",
-            reminder: "false"
+            reminder: false
         },
     ]
   )
   
   const deleteTask = (id) => {
-    //console.log('delete', id);
+    //Delete tasks
     setTasks(tasks.filter( 
       (task) =>task.id!=id
+    ))
+  }
+
+  //toggle reminder
+  const toggleReminder = (id) => {
+    setTasks(tasks.map(
+      (task) => task.id === id ? { ...task, reminder: !task.reminder } : task
     ))
   }
 
   return (
     <div className="container">
       <Header />
-      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/> : 'No tasks to show'}
+      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No tasks to show'}
     </div>
   );
 }
